@@ -1,0 +1,40 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+
+.container {
+  max-width: 800px;
+  margin : 10px auto;
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.score {
+  text-align: center; /* Yazıyı yatay olarak ortalar */
+  font-size: 24px; /* Yazı boyutunu artırır */
+  font-weight: bold; /* Yazıyı kalın yapar */
+  margin: 20px 0; /* Üst ve alt boşluk ekler */
+}
+
+.startButton {
+  background-color: red; /* Butonun rengini kırmızı yapar */
+  color: white; /* Yazıyı beyaz yapar */
+  font-size: 20px; /* Yazı boyutunu büyütür */
+  font-weight: bold; /* Yazıyı kalın yapar */
+  padding: 15px 30px; /* Butonun iç boşluğunu artırır */
+  border: none; /* Kenarlığı kaldırır */
+  border-radius: 10px; /* Köşeleri yuvarlatır */
+  cursor: pointer; /* Üzerine gelindiğinde imleci el simgesi yapar */
+  transition: 0.3s; /* Animasyon efekti ekler */
+}
+
+.startButton:hover {
+  background-color: darkred; /* Butonun üzerine gelindiğinde koyu kırmızı olur */
+}

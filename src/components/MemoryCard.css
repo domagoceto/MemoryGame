@@ -1,0 +1,31 @@
+.card img{
+    width: 100%;
+    border: 2px;
+    display:block;
+  }
+  .card {
+    position: relative;
+    cursor: pointer; /* Fare imlecini el işareti yapar */
+  }
+
+  .card .cardFront{
+
+    position: absolute;
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+  }
+
+  .card .cardBack{
+    transform:rotateY(0deg);
+    transition: all ease-in 0.2s;
+  }
+
+  .rotated .cardFront{
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+  }
+
+  .rotated .cardBack{
+    transform: rotateY(90deg);
+    transition-delay: 0.2s;
+  }
